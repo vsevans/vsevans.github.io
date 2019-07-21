@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solar Orbiter Magnetometer Project</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- Header Line -->
+	<header>
+		<h1>
+			<img class="img_round display_inline" src="img/SOflying.jpg" height=80px width=80px> 
+			Solar Orbiter MAG Data Portal
+		</h1>
+
+		<!-- Last updated datetime -->
+		<div class="last_updated">
+			Most recent data-download: 2019-07-22 10:31:57 UTC
+		</div>
+	</header>
+
+	
+	<!-- Navigation Bar -->		
+	<nav style="background-color:darkgreen">
+		<a href="http://sci.esa.int/solar-orbiter/" class="nav_bar" margin-left:100px >Home</a>
+		<a href="http://sci.esa.int/solar-orbiter/" class="nav_bar">About</a>
+		<a href="http://sci.esa.int/solar-orbiter/" class="nav_bar">Data Download</a>		
+		<a href="http://sci.esa.int/solar-orbiter/" class="nav_bar">Analysis Requests</a>	
+		<a href="http://sci.esa.int/solar-orbiter/" class="nav_bar">Contact</a>	
+	</nav>
+
+	<h2>Overview</h2>
+	<p>Welcome to the homepage for the Solar Orbiter magnetometer project. Here you can download magnetometer data, submit bespoke data requests, check probe status and keep up to date with the latest project developments. </p>
+
+	<h3>Sensor Status and Performance</h3>
+	<table style="width:80%">
+		<tr>
+			<th>Sensor</th>
+			<th>Status</th> 
+			<th>Up-time (%) [last 6 weeks]</th>
+			<th>Up-time (%) [all-time]</th>
+			<th>Most recent data-point</th>
+		</tr>
+		<tr>
+			<td>MAG Inboard</td>
+			<td>Online</td> 
+			<td>100</td>
+			<td>100</td>
+			<td>2019-07-22 09:21:13 UTC</td>
+		</tr>
+		<tr>
+			<td>MAG Outboard</td>
+			<td>Online</td> 
+			<td>100</td>
+			<td>100</td>
+			<td>2019-07-22 09:21:17 UTC</td>
+		</tr>
+	</table>
+
+	<h3>Probe Location</h3>
+	<p>Last known location (2019-07-22 09:29:36):</p>
+	<img src="img/SOtrajectory.png" height=225px width=350px>
+
+	<h3> Data Download Portal</h3>
+	<p width=50px>To download data in raw or pre-processed formats please use the tool below. </p>
+	<p>	Your data will be downloaded in either CSV or XML format. </p>
+	<p>Files above 20MB will be zipped.</p>
+	<p>	Fields marked with an asterisk are required. </p>
+	<form action="/action_page.php">
+		Salutation:
+		<select name="salutation">
+			<option value="Mr">Mr</option>
+			<option value="Mrs">Mrs</option>
+			<option value="Ms">Ms</option>
+			<option value="Dr">Dr</option>
+			<option value="Prof">Prof</option>
+			<option value="Other">Other</option>
+		</select><br>
+		First name<sup>*</sup>: <input type="text" name="fname"><br>
+		Last name<sup>*</sup>: <input type="text" name="lname"><br>
+		Institution<sup>*</sup>: <input type="text" name="institution"><br>
+		Position<sup>*</sup>: <input type="text" name="position"><br>
+		Comments for us: <input type="text" name="comments"><br>
+		Date From: <input type="text" name="comments"><br>
+		Date To: <input type="text" name="comments"><br>
+		Sensor(s): <input type="text" name="comments"><br>
+		Processed (y/n): <input type="text" name="comments"><br>
+		Include metadata (y/n):<input type="text" name="comments"><br>
+		<input type="submit" value="Submit">
+	</form>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
