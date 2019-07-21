@@ -80,12 +80,19 @@
 		Last name<sup>*</sup>: <input type="text" name="lname"><br>
 		Institution<sup>*</sup>: <input type="text" name="institution"><br>
 		Position<sup>*</sup>: <input type="text" name="position"><br>
+		E-mail Address<sup>*</sup>: <input type="text" name="email"><br>		
 		Comments for us: <input type="text" name="comments"><br>
-		Date From: <input type="text" name="comments"><br>
-		Date To: <input type="text" name="comments"><br>
-		Sensor(s): <input type="text" name="comments"><br>
-		Processed (y/n): <input type="text" name="comments"><br>
-		Include metadata (y/n):<input type="text" name="comments"><br>
+		Date From: <input type="date" name="date_from"><br>
+		Date To: <input type="date" name="date_to"><br><br>
+		Raw Sensor(s) Data:<br> <input type="checkbox" name="MAG_in" value="y"> MAG-Inboard<br>
+<input type="checkbox" name="MAG_out" value="y"> MAG-Outboard<br><br>
+		Processed Datasets: <br> <input type="checkbox" name="B_maps" value="y"> B-field maps<br>
+<input type="checkbox" name="noise_maps" value="y"> Noise Profile<br>
+<input type="checkbox" name="other_data" value="y"> Other <br><br>
+		Diagnostics Data:<input type="checkbox" name="diagnostics" value="y"><br>
+
+		Include metadata:
+<input type="checkbox" name="include_metadata" value="y"> <br><br>
 		<input type="submit" value="Submit">
 	</form>
 
